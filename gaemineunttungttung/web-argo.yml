@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: gaemineunttungttung/web-argo:1
+        image: gaemineunttungttung/web-argo:2
         ports:
         - containerPort: 80
