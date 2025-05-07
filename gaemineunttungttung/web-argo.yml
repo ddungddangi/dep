@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web-argo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: web-argo
+  template:
+    metadata:
+      labels:
+        app: web-argo
+    spec:
+      containers:
+      - name: nginx
+        image: gaemineunttungttung/web-argo:1
+        ports:
+        - containerPort: 80
