@@ -11,7 +11,7 @@ spec:
     app: front
   ports:
   - port: 80
-    targetPort: 5173
+    targetPort: 8080
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -31,5 +31,7 @@ spec:
       containers:
       - name: con-front
         image: gaemineunttungttung/spring:7
+        ports:
+        - containerPort: 8080
 
 
