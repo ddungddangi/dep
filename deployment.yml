@@ -30,6 +30,6 @@ spec:
     spec:
       containers:
       - name: con-front
-        image: gaemineunttungttung/spring:3
+        image: gaemineunttungttung/spring:6
 
 
